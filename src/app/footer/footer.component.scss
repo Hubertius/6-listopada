@@ -1,5 +1,6 @@
 footer{
   position: fixed;
+  min-width: 330px;
   width: 100%;
   bottom: 0px;
   height: 10%;
@@ -8,14 +9,10 @@ footer{
   background-color:#00BFFF;
   z-index: 1;
 }
-.main_footer > div{
-  display:inline-block;
-  vertical-align: middle;
-}
+
 .main_nav{
   display: inline-block;
   text-align: right;
-  width: calc(100% - 500px);
   vertical-align: middle;
 }
 .footer-list{
@@ -23,9 +20,44 @@ footer{
   list-style: none;
   text-align: right;
 }
+.main_footer-div{
+  text-align: center;
+  font-size: 10px;
+  padding-top: 2.5%;
+  @media screen and (min-width:576px)
+  {
+    font-size: 11px;
+    padding-top: 2.3%;
+  }
+  @media screen and (min-width:768px){
+    padding-top: 2%;
+  }
+  @media screen and (min-width:992px){
+      padding-top: 1.6%;
+      font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+      padding-top: 1%;
+      font-size: 15px;
+  }
+}
 .footer-list-element{
   padding: 20px;
   display: inline-block;
+  font-size: 10px;
+  @media screen and (min-width:576px)
+  {
+
+  }
+  @media screen and (min-width:768px){
+    font-size: 12px;
+  }
+  @media screen and (min-width:992px){
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+      font-size: 15px;
+  }
 }
 .footer-list-element a{
   text-decoration: none;
